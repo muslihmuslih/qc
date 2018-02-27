@@ -47,7 +47,7 @@
 				$result=mysqli_query($connect,$queri);
 				$total=mysqli_num_rows($result);
 				$pages=ceil($total/$halaman);
-				$query="select * from m_input where no_po='".$cari."' || nama= '".$cari."' || nama_kain like '%".$cari."%' || tanggal='".$cari."' LIMIT $mulai, $halaman";
+				$query="select * from m_input where no_po='".$cari."' || nama= '".$cari."' || nama_kain like '%".$cari."%' || tanggal='".$cari."' || deskripsi like '%".$cari."%' || ketinspector like '%".$cari."%' LIMIT $mulai, $halaman";
 				$result2=mysqli_query($connect,$query) ;
 				$no=$mulai+1;
 			} else {
@@ -93,7 +93,9 @@
 							<button onclick="location.href='../library/status_pending.php?idinput=<?php echo $row->id_input; ?>'" >PENDING</button>
 						</td>	
 						<td>
-							<a href="javascript:window.location.reload()"><input style="border: 0px" type="image" src="../images/refresh.png"></a>
+							<!--<a href="javascript:window.location.reload()"><input style="border: 0px" type="image" src="../images/refresh.png"></a>-->
+							<!--<a href="javascript:window.location.reload()">refresh</a>-->
+							<a href="javascript:window.location.reload()"><input style="background-image: url(../images/refresh2.png); background-repeat: no-repeat; height: 5px; width: 5px; padding: 23px; border: 0px "></a>
 						</td>		
 					</tr>
 					<?php $no ++;

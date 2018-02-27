@@ -10,7 +10,7 @@
 	<?php 
 		include "../library/koneksi.php";
 		$cari=$_POST['cari'];
-		$queri="select * from m_input where status='Pending' and no_po='".$cari."'|| nama= '".$cari."' || nama_kain like '%".$cari."%' || tanggal='".$cari."'";
+		$queri="select * from m_input where status='Pending' and no_po='".$cari."' || (status='Pending' and nama= '".$cari."') || (status='Pending' and nama_kain like '%".$cari."%') || (status='Pending' and tanggal='".$cari."') || (status='Pending' and deskripsi like '%".$cari."%') || (status='Pending' and ketinspector like '%".$cari."%')";
 		$result2=mysqli_query($connect,$queri);
 		$total=mysqli_num_rows($result2);
 		$no=1;

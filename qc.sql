@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Feb 27, 2018 at 11:22 AM
+=======
+-- Generation Time: Feb 16, 2018 at 07:30 AM
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 -- Server version: 10.1.25-MariaDB
 -- PHP Version: 5.6.31
 
@@ -155,6 +159,7 @@ CREATE TABLE `m_input` (
 --
 
 INSERT INTO `m_input` (`id_input`, `tanggal`, `no_po`, `no_lot`, `nama_kain`, `warna`, `supplier`, `lebar`, `gramasi`, `hasil`, `deskripsi`, `tindakan`, `status`, `nama`, `keterangan`, `ketinspector`) VALUES
+<<<<<<< HEAD
 (107, '2018-02-24', '1711isa-040163', '6911/3', 'kris', 'anggur', 'ISA', 170, 256, 'OK', '', '', 'Pending', 'epul', 'by desi, 2018-02-26', ''),
 (108, '2018-02-24', '1711isa-019', '6547/16', 'kuljer', 'hitam', 'ISA', 170, 210, 'NO', 'Barre', 'Retur', 'Pending', 'epul', 'by desi, 2018-02-26', 'reture pa unjani toko idola 113 '),
 (109, '2018-02-24', '1712mkl-010777', '98149/17', 'jersey', 'biru telor asin', 'DAENONG', 165, 208, 'OK', '', '', 'Pending', 'epul', 'by desi, 2018-02-26', ''),
@@ -176,6 +181,10 @@ INSERT INTO `m_input` (`id_input`, `tanggal`, `no_po`, `no_lot`, `nama_kain`, `w
 (125, '2018-02-26', '1', '1', 'satu', 'satu', 'ISA', 1, 1, 'OK', '', '', 'Pending', 'cepi', '', '1'),
 (126, '2018-02-26', '2', '2', 'dua', 'dua', 'ISA', 2, 2, 'OK', '', '', 'Pending', 'cepi', '', '2'),
 (127, '2018-02-26', '3', '3', 'tiga', 'tiga', 'ISA', 3, 3, 'OK', '', '', 'Pending', 'cepi', 'by desi, 2018-02-27', '3');
+=======
+(105, '2018-02-09', '546', '343', 'dgd', 'dgdf', 'WIS', 34, 34, 'OK', '', '', 'Pending', 'permana', 'by admin, 2018-02-10', 'dfgd'),
+(106, '2018-02-10', '12', '27206-18', 'Reiny', 'Maroon', 'DAENONG', 27, 2, 'OK', '', '', 'Pending', 'epul', '', 'Ok');
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 
 -- --------------------------------------------------------
 
@@ -198,8 +207,12 @@ INSERT INTO `m_masalah` (`id_masalah`, `kd_masalah`, `deskripsi`) VALUES
 (2, NULL, 'Chafing Mark (Tua)'),
 (3, NULL, 'Gugus'),
 (4, NULL, 'Belang Spandex'),
+<<<<<<< HEAD
 (5, NULL, 'Noda Obat'),
 (6, '', 'Barre');
+=======
+(5, NULL, 'Noda Obat');
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 
 -- --------------------------------------------------------
 
@@ -239,8 +252,12 @@ CREATE TABLE `m_tindakan` (
 INSERT INTO `m_tindakan` (`id_tindakan`, `tindakan`) VALUES
 (1, 'Retur'),
 (2, 'Claim'),
+<<<<<<< HEAD
 (3, 'BS'),
 (4, 'TBC');
+=======
+(3, 'BS');
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 
 --
 -- Indexes for dumped tables
@@ -322,12 +339,20 @@ ALTER TABLE `m_hasil`
 -- AUTO_INCREMENT for table `m_input`
 --
 ALTER TABLE `m_input`
+<<<<<<< HEAD
   MODIFY `id_input` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
+=======
+  MODIFY `id_input` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 --
 -- AUTO_INCREMENT for table `m_masalah`
 --
 ALTER TABLE `m_masalah`
+<<<<<<< HEAD
   MODIFY `id_masalah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+=======
+  MODIFY `id_masalah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 --
 -- AUTO_INCREMENT for table `m_status`
 --
@@ -337,7 +362,11 @@ ALTER TABLE `m_status`
 -- AUTO_INCREMENT for table `m_tindakan`
 --
 ALTER TABLE `m_tindakan`
+<<<<<<< HEAD
   MODIFY `id_tindakan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
+=======
+  MODIFY `id_tindakan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
+>>>>>>> 2775084991742c15a940e9927dd9ea79e6a8de02
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
